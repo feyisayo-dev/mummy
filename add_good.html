@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Goods</title>
+    <link rel="shortcut icon" href="./assets/images/logo/shopping.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font/bootstrap-icons.css">
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="mobile-header">
+        <h2>FSD Beauty Menu</h2>
+        <div class="toggle-sidebar">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>FSD Beauty Menu</h2>
+        </div>
+        <div class="sidebar-content">
+            <div class="menu-item active" id="add-goods">
+                <i class="fas fa-plus-circle"></i>
+                <span>Add Goods</span>
+            </div>
+            <div class="menu-item" id="add-library">
+                <i class="fas fa-book"></i>
+                <span>Add Library</span>
+            </div>
+            <div class="menu-item" id="add-category">
+                <img width="20" height="20" src="assets/images/logo/category.png" class="icon">
+                <span>Add Category</span>
+            </div>
+            <div class="menu-item" id="add-sub-category">
+                <img width="20" height="20" src="assets/images/logo/index.png" class="icon">
+                <span>Add Sub Category</span>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <div class="adding_sub_category">
+            <div class="sub-category-box">
+                <input type="text" class="sub-category-name" placeholder="sub-category Name">
+                <input type="file" class="sub-category-icon-upload" accept="image/*" id="sub-category-icon" hidden>
+                <label for="sub-category-icon" class="sub-category-icon-label">
+                    <img class="sub_category_image" src="assets/images/open_wardrobe.png" alt="sub-category Icon">
+                    <p id="sub-category-name-label">sub-category Icon</p>
+                </label>
+                <div class="sub-category-drop">
+
+                </div>
+                <div class="submitdivlib">
+                    <button class="submit_sub_category" type="submit" id="submit_sub_category">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="adding_category">
+            <div class="category-box">
+                <input type="text" class="category-name" placeholder="category Name">
+                <input type="file" class="category-icon-upload" accept="image/*" id="category-icon" hidden>
+                <label for="category-icon" class="category-icon-label">
+                    <img class="category_image" src="assets/images/wardrobe.png" alt="category Icon">
+                    <p id="category-name-label">Category Icon</p>
+                </label>
+                <div class="submitdivlib">
+                    <button class="submit_category" type="submit" id="submit_category">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="adding_libraries">
+            <div class="library-box">
+                <input type="text" class="library-name" placeholder="Library Name">
+                <input type="file" class="library-icon-upload" accept="image/*" id="library-icon" hidden>
+                <label for="library-icon" class="library-icon-label">
+                    <img class="library_image" src="assets/images/library.png" alt="Library Icon">
+                    <p id="library-name-label">Library Icon</p>
+                </label>
+                <div class="submitdivlib">
+                    <button class="submit_library" type="submit" id="submit_library">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="adding_goods">
+            <div class="form">
+                <input type="text" id="product-name" placeholder="product name">
+                <input type="text" id="store-name" placeholder="Store Name">
+                <div class="textarea-container">
+                    <textarea id="des"
+                        placeholder="Detailed description . E.g A blue crazy austrialian baggy shirt with naruto designs to fit your slim/ slender body. Brought to you by FSD stores to be deliverd Nation wide Nigeria (Note: This will not show until read more is clicked, your quick description will show in the product preview)"></textarea>
+                    <div id="char-count" class="char-count">0/5000</div>
+                </div>
+                <div class="Category"></div>
+                <div class="SubCategory"></div>
+                <!-- product image -->
+                <div class="product-info">
+                    <div class="upload-image-sec">
+                        <div class="upload-catalogue">
+                            <div class="upload-box">
+                                <input type="file" class="fileupload" id="first-file-upload-btn" hidden
+                                    accept="image/*">
+                                <label for="first-file-upload-btn" id="upload-image-1" class="upload-image">
+                                    <span class="upload-number-1">1</span>
+                                    <span class="upload-label-1">Upload</span>
+                                    <img class="upload_image_1_image" src="" alt="upload_image_1_image">
+                                </label>
+                            </div>
+                            <div class="upload-box">
+                                <input type="file" class="fileupload" id="second-file-upload-btn" hidden
+                                    accept="image/*">
+                                <label for="second-file-upload-btn" id="upload-image-2" class="upload-image">
+                                    <span class="upload-number-2">2</span>
+                                    <span class="upload-label-2">Upload</span>
+                                    <img class="upload_image_2_image" src="" alt="upload_image_2_image">
+                                </label>
+                            </div>
+                            <div class="upload-box">
+                                <input type="file" class="fileupload" id="third-file-upload-btn" hidden
+                                    accept="image/*">
+                                <label for="third-file-upload-btn" id="upload-image-3" class="upload-image">
+                                    <span class="upload-number-3">3</span>
+                                    <span class="upload-label-3">Upload</span>
+                                    <img class="upload_image_3_image" src="" alt="upload_image_3_image">
+
+                                </label>
+                            </div>
+                            <div class="upload-box">
+                                <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden
+                                    accept="image/*">
+                                <label for="fourth-file-upload-btn" id="upload-image-4" class="upload-image">
+                                    <span class="upload-number-4">4</span>
+                                    <span class="upload-label-4">Upload</span>
+                                    <img class="upload_image_4_image" src="" alt="upload_image_4_image">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-sizes">
+                        <p class="text">Size available:</p>
+                        <div class="sizes">
+                            <label class="size-label" for="xs">
+                                <input type="checkbox" class="size-checkbox" id="xs" value="xs"> XS
+                            </label>
+                            <label class="size-label" for="s">
+                                <input type="checkbox" class="size-checkbox" id="s" value="s"> S
+                            </label>
+                            <label class="size-label" for="m">
+                                <input type="checkbox" class="size-checkbox" id="m" value="m"> M
+                            </label>
+                            <label class="size-label" for="l">
+                                <input type="checkbox" class="size-checkbox" id="l" value="l"> L
+                            </label>
+                            <label class="size-label" for="xl">
+                                <input type="checkbox" class="size-checkbox" id="xl" value="xl"> XL
+                            </label>
+                            <label class="size-label" for="xxl">
+                                <input type="checkbox" class="size-checkbox" id="xxl" value="xxl"> XXL
+                            </label>
+                            <label class="size-label" for="xxxl">
+                                <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl"> XXXL
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-price">
+                    <input type="number" id="actual-price" placeholder="actual price">
+                    <input type="number" id="discount" placeholder="discount percentage">
+                    <input type="number" id="sell-price" placeholder="selling price">
+                </div>
+
+                <input type="number" id="stock" min="20" placeholder="item in stocks (minimum 1)">
+                <div class="textarea-container">
+                    <textarea id="tags"
+                    placeholder="Enter any quick description. E.g: Crazy Jean, Baggy Trousers, etc. (put the comma to seperate the descriptions)"></textarea>
+                    <div id="tag-count" class="tag-count">0/500</div>
+                </div>
+                
+
+                <input type="checkbox" class="checkbox" id="tac" checked>
+                <label for="tac">clothing take 30% from your total sell</label>
+
+                <div class="buttons">
+                    <button class="btn" id="add-btn">add product</button>
+                    <button class="btn" id="save-btn">save draft</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='assets/js/main.js'></script>
+<script src="assets/js/jquery.min.js"></script>
+
+</html>
